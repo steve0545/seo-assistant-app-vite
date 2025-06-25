@@ -28,12 +28,12 @@ const App = () => {
     // YOUR ACTUAL FIREBASE CONFIGURATION
     // This is the configuration for your "content-creator-5c119" project
     const firebaseConfig = {
-      apiKey: "AIzaSyAuPLnyh8DwgUpLvfdxN3Dp3j4w6hjbfJo",
-      authDomain: "content-creator-5c119.firebaseapp.com",
-      projectId: "content-creator-5c119",
-      storageBucket: "content-creator-5c119.firebasestorage.app",
-      messagingSenderId: "1026122691265",
-      appId: "1:1026122691265:web:1321abfa816740ba6d1a40"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID
     };
 
     // Initialize Firebase and handle authentication state

@@ -12,4 +12,7 @@
     "build": "react-scripts build"
   }
 }
+}"scripts": {
+  "start": "react-scripts -r dotenv/config start",
+  "build": "react-scripts -r dotenv/config build"
 }
